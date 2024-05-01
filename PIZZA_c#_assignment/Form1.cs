@@ -18,11 +18,6 @@ namespace PIZZA_c__assignment
             txtPassword.PasswordChar = '*';
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             
@@ -33,6 +28,13 @@ namespace PIZZA_c__assignment
             else
             { txtPassword.PasswordChar = '\0'; }
             
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            ContainerForm ctn = new ContainerForm();
+            ctn.Show(); 
+            this.Hide();
         }
     }
 }

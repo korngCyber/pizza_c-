@@ -8,3 +8,7 @@ D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assi
 D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.csproj.CoreCompileInputs.cache
 D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.exe
 D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.pdb
+D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\obj\Debug\PIZZA_c__assignment.ContainerForm.resources
+D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\bin\Debug\Guna.UI2.dll
+D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.csproj.CopyComplete
+D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\obj\Debug\PIZZA_c__assignment.ProductUS.resources
