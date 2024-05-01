@@ -47,7 +47,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.rjButton1 = new PIZZA_c__assignment.RJButton.RJButton();
+            this.btnLogin = new PIZZA_c__assignment.RJButton.RJButton();
             this.SuspendLayout();
             // 
             // panel1
@@ -230,24 +230,24 @@
             this.panel7.Size = new System.Drawing.Size(25, 25);
             this.panel7.TabIndex = 17;
             // 
-            // rjButton1
+            // btnLogin
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.DarkGreen;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.DarkGreen;
-            this.rjButton1.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton1.BorderRadius = 35;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(25, 548);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(682, 55);
-            this.rjButton1.TabIndex = 8;
-            this.rjButton1.Text = "SIGN IN";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnLogin.BackgroundColor = System.Drawing.Color.DarkGreen;
+            this.btnLogin.BorderColor = System.Drawing.Color.Transparent;
+            this.btnLogin.BorderRadius = 35;
+            this.btnLogin.BorderSize = 0;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(25, 548);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(682, 55);
+            this.btnLogin.TabIndex = 8;
+            this.btnLogin.Text = "Log in";
+            this.btnLogin.TextColor = System.Drawing.Color.White;
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Form1
             // 
@@ -266,7 +266,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.checkpassword);
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
@@ -296,7 +296,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtPassword;
-        private RJButton.RJButton rjButton1;
+        private RJButton.RJButton btnLogin;
         private System.Windows.Forms.CheckBox checkpassword;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

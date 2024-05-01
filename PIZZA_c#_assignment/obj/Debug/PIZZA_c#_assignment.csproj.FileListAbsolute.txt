@@ -12,3 +12,17 @@ D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\obj\Debug\PIZZA_c__assi
 D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\bin\Debug\Guna.UI2.dll
 D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.csproj.CopyComplete
 D:\RUPP\year3\c#\PIZZA_c#_assignment\PIZZA_c#_assignment\obj\Debug\PIZZA_c__assignment.ProductUS.resources
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\bin\Debug\PIZZA_c#_assignment.exe.config
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\bin\Debug\PIZZA_c#_assignment.exe
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\bin\Debug\PIZZA_c#_assignment.pdb
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\bin\Debug\Guna.UI2.dll
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.csproj.AssemblyReference.cache
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c__assignment.ContainerForm.resources
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c__assignment.Form1.resources
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c__assignment.ProductUS.resources
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c__assignment.Properties.Resources.resources
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.csproj.GenerateResource.cache
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.csproj.CoreCompileInputs.cache
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c#.36DEC1B9.Up2Date
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.exe
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.pdb

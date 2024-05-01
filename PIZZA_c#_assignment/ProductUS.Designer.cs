@@ -95,6 +95,7 @@ namespace PIZZA_c__assignment
             this.txtProName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProName.Location = new System.Drawing.Point(139, 196);
+            this.txtProName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtProName.Name = "txtProName";
             this.txtProName.PasswordChar = '\0';
             this.txtProName.PlaceholderText = "";
@@ -115,12 +116,9 @@ namespace PIZZA_c__assignment
             this.txtProCombobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txtProCombobox.ItemHeight = 30;
             this.txtProCombobox.Items.AddRange(new object[] {
-            "Small",
-            "Meduim ",
-            "Large ",
-            "3 pieces",
-            "7 pieces",
-            "12 pieces"});
+            "S",
+            "M",
+            "L"});
             this.txtProCombobox.Location = new System.Drawing.Point(139, 252);
             this.txtProCombobox.Name = "txtProCombobox";
             this.txtProCombobox.Size = new System.Drawing.Size(202, 36);
@@ -177,6 +175,7 @@ namespace PIZZA_c__assignment
             this.txtProPrice.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProPrice.Location = new System.Drawing.Point(139, 304);
+            this.txtProPrice.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtProPrice.Name = "txtProPrice";
             this.txtProPrice.PasswordChar = '\0';
             this.txtProPrice.PlaceholderText = "";
@@ -236,6 +235,10 @@ namespace PIZZA_c__assignment
             get { return txtProPrice.Text;} 
             set { txtProPrice.Text = value;}
         }
-      
+        public ComboBox combo
+        {
+            get { return txtProCombobox; }
+        }
+
     }
 }

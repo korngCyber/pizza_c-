@@ -40,16 +40,11 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnCash = new PIZZA_c__assignment.RJButton.RJButton();
-            this.btnClearAll = new PIZZA_c__assignment.RJButton.RJButton();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnCash = new PIZZA_c__assignment.RJButton.RJButton();
+            this.btnClearAll = new PIZZA_c__assignment.RJButton.RJButton();
             this.productUS1 = new PIZZA_c__assignment.ProductUS();
-            this.productUS2 = new PIZZA_c__assignment.ProductUS();
-            this.productUS3 = new PIZZA_c__assignment.ProductUS();
-            this.productUS4 = new PIZZA_c__assignment.ProductUS();
-            this.productUS5 = new PIZZA_c__assignment.ProductUS();
-            this.productUS6 = new PIZZA_c__assignment.ProductUS();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -218,6 +213,32 @@
             this.panel4.Size = new System.Drawing.Size(373, 711);
             this.panel4.TabIndex = 3;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(102, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(194, 31);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Current Order";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.AutoScroll = true;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 404F));
+            this.tableLayoutPanel1.Controls.Add(this.productUS1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 140);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 441F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 441F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1174, 711);
+            this.tableLayoutPanel1.TabIndex = 1;
+            // 
             // btnCash
             // 
             this.btnCash.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -254,37 +275,6 @@
             this.btnClearAll.TextColor = System.Drawing.Color.White;
             this.btnClearAll.UseVisualStyleBackColor = false;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(102, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 31);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Current Order";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.AutoScroll = true;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
-            this.tableLayoutPanel1.Controls.Add(this.productUS1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.productUS2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.productUS3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.productUS4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.productUS5, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.productUS6, 2, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 140);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 441F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 441F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1174, 711);
-            this.tableLayoutPanel1.TabIndex = 1;
-            // 
             // productUS1
             // 
             this.productUS1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -293,70 +283,9 @@
             this.productUS1.Name = "productUS1";
             this.productUS1.Picture = ((System.Drawing.Image)(resources.GetObject("productUS1.Picture")));
             this.productUS1.Product_Name = "";
-            this.productUS1.Product_price = "hxxhhxx";
+            this.productUS1.Product_price = "";
             this.productUS1.Size = new System.Drawing.Size(371, 427);
             this.productUS1.TabIndex = 0;
-            this.productUS1.Load += new System.EventHandler(this.productUS1_Load);
-            // 
-            // productUS2
-            // 
-            this.productUS2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productUS2.Location = new System.Drawing.Point(392, 7);
-            this.productUS2.Margin = new System.Windows.Forms.Padding(7);
-            this.productUS2.Name = "productUS2";
-            this.productUS2.Picture = ((System.Drawing.Image)(resources.GetObject("productUS2.Picture")));
-            this.productUS2.Product_Name = "";
-            this.productUS2.Product_price = "";
-            this.productUS2.Size = new System.Drawing.Size(371, 427);
-            this.productUS2.TabIndex = 1;
-            // 
-            // productUS3
-            // 
-            this.productUS3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productUS3.Location = new System.Drawing.Point(777, 7);
-            this.productUS3.Margin = new System.Windows.Forms.Padding(7);
-            this.productUS3.Name = "productUS3";
-            this.productUS3.Picture = ((System.Drawing.Image)(resources.GetObject("productUS3.Picture")));
-            this.productUS3.Product_Name = "";
-            this.productUS3.Product_price = "";
-            this.productUS3.Size = new System.Drawing.Size(380, 427);
-            this.productUS3.TabIndex = 2;
-            // 
-            // productUS4
-            // 
-            this.productUS4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productUS4.Location = new System.Drawing.Point(7, 448);
-            this.productUS4.Margin = new System.Windows.Forms.Padding(7);
-            this.productUS4.Name = "productUS4";
-            this.productUS4.Picture = ((System.Drawing.Image)(resources.GetObject("productUS4.Picture")));
-            this.productUS4.Product_Name = "";
-            this.productUS4.Product_price = "";
-            this.productUS4.Size = new System.Drawing.Size(371, 427);
-            this.productUS4.TabIndex = 3;
-            // 
-            // productUS5
-            // 
-            this.productUS5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productUS5.Location = new System.Drawing.Point(392, 448);
-            this.productUS5.Margin = new System.Windows.Forms.Padding(7);
-            this.productUS5.Name = "productUS5";
-            this.productUS5.Picture = ((System.Drawing.Image)(resources.GetObject("productUS5.Picture")));
-            this.productUS5.Product_Name = "";
-            this.productUS5.Product_price = "";
-            this.productUS5.Size = new System.Drawing.Size(371, 427);
-            this.productUS5.TabIndex = 4;
-            // 
-            // productUS6
-            // 
-            this.productUS6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productUS6.Location = new System.Drawing.Point(777, 448);
-            this.productUS6.Margin = new System.Windows.Forms.Padding(7);
-            this.productUS6.Name = "productUS6";
-            this.productUS6.Picture = ((System.Drawing.Image)(resources.GetObject("productUS6.Picture")));
-            this.productUS6.Product_Name = "";
-            this.productUS6.Product_price = "";
-            this.productUS6.Size = new System.Drawing.Size(380, 427);
-            this.productUS6.TabIndex = 5;
             // 
             // ContainerForm
             // 
@@ -371,7 +300,6 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ContainerForm";
             this.Text = "ContainerForm";
-            this.Load += new System.EventHandler(this.ContainerForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -402,10 +330,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private ProductUS productUS1;
-        private ProductUS productUS2;
-        private ProductUS productUS3;
-        private ProductUS productUS4;
-        private ProductUS productUS5;
-        private ProductUS productUS6;
     }
 }
