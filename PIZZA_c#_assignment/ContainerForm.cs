@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -17,36 +18,30 @@ namespace PIZZA_c__assignment
         public ContainerForm()
         {
             InitializeComponent();
-            decimal p = 0;
-            try
+        }
+        private void ContainerForm_Load(object sender, EventArgs e)
+        {
+            Product.InitializeProduct();
+            btnPizza.PerformClick();
+        }
+
+        private void btnPizza_Click(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.RowStyles.Clear();
+            //tableLayoutPanel1.ColumnStyles.Clear();
+
+            while (tableLayoutPanel1.Controls.Count > 0)
             {
-                string sql = "SELECT ProName,PriceOUT FROM tbProducts";
-                SqlCommand cmd = new SqlCommand(sql, DatabaseConnection.dataCon);
-                SqlDataReader r = cmd.ExecuteReader();
-                int column = 0, row = 0, id = 1;
-                while (r.Read())
+                tableLayoutPanel1.Controls[0].Dispose();
+            }
+
+            int column = 0, row = 0, id = 1;
+            for (int i = 0; i < Product.products.Count; i++)
+            {
+                if (Product.products[i].catID.Equals("1"))
                 {
-                    ProductUS pro = new ProductUS();
-                    pro.Product_Name = r[0].ToString();
-                    int index = pro.combo.SelectedIndex;
-                    decimal price = r.GetDecimal(1);
-                   if (index == 0)
-                    {
-                        p = price;
-                    }
-                   else if (index == 1) 
-                   {
-                        p = price + 2;
-                   }
-                   else 
-                   {
-                        p = price+4;
-                   }
-                    pro.Product_price = p.ToString("C", System.Globalization.CultureInfo.CurrentCulture);
-                    // l == price(default) 
-                    // M ==  price + 2.00
-                    // S == price + 300
-                    tableLayoutPanel1.Controls.Add(pro,column,row);
+                    ProductUS p = new ProductUS(Product.products[i]);
+                    tableLayoutPanel1.Controls.Add(p, column, row);
                     column++;
                     if (column > 2)
                     {
@@ -54,14 +49,31 @@ namespace PIZZA_c__assignment
                         column = 0;
                     }
                 }
-                r.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-       
+        private void btnChicken_Click(object sender, EventArgs e)
+        {
+            while (tableLayoutPanel1.Controls.Count > 0)
+            {
+                tableLayoutPanel1.Controls[0].Dispose();
+            }
+
+            int column = 0, row = 0, id = 1;
+            for (int i = 0; i < Product.products.Count; i++)
+            {
+                if (Product.products[i].catID.Equals("3"))
+                {
+                    ProductUS p = new ProductUS(Product.products[i]);
+                    tableLayoutPanel1.Controls.Add(p, column, row);
+                    column++;
+                    if (column > 2)
+                    {
+                        row++;
+                        column = 0;
+                    }
+                }
+            }
+        }
     }
 }

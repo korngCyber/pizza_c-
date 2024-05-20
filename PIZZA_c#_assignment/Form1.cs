@@ -16,6 +16,7 @@ namespace PIZZA_c__assignment
         {
             InitializeComponent();
             txtPassword.PasswordChar = '*';
+            
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -26,7 +27,9 @@ namespace PIZZA_c__assignment
             }
             else
             { txtPassword.PasswordChar = '\0'; }
-            
+            string username = "Piseth";
+            string password = "1";
+            DatabaseConnection.sqlAuthentication(username, password);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -35,12 +38,16 @@ namespace PIZZA_c__assignment
             {
                 string username = txtUsername.Text.Trim();
                 string password = txtPassword.Text.Trim();
-                //DatabaseConnection.sqlAuthentication(username, password);
-                DatabaseConnection.windowsAuthentication();
 
+                //DatabaseConnection.windowsAuthentication();
 
-                new ContainerForm().ShowDialog();
-                this.Dispose();
+                if (Product.Login(username, password))
+                {
+                    new ContainerForm().ShowDialog();
+                    this.Dispose();
+                }
+                else
+                    MessageBox.Show("Incorrect Username or Password", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex) 
             {

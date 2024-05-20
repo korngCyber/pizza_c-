@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Year3\\C#\\pizaa_assigment_c-\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|d:\\year3\\c#\\pizaa_assigment_c-\\pizza_c#_assignment\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|solutionrelative:pizza_c#_assignment\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|D:\\Year3\\C#\\pizaa_assigment_c-\\pizza_c#_assignment\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|solutionrelative:pizza_c#_assignment\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|D:\\Year3\\C#\\pizaa_assigment_c-\\pizza_c#_assignment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|solutionrelative:pizza_c#_assignment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|D:\\Year3\\C#\\pizaa_assigment_c-\\pizza_c#_assignment\\containerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|solutionrelative:pizza_c#_assignment\\containerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|D:\\Year3\\C#\\pizaa_assigment_c-\\pizza_c#_assignment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|solutionrelative:pizza_c#_assignment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|D:\\Year3\\C#\\pizaa_assigment_c-\\pizza_c#_assignment\\productus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|solutionrelative:pizza_c#_assignment\\productus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|D:\\Year3\\C#\\pizaa_assigment_c-\\pizza_c#_assignment\\productus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|solutionrelative:pizza_c#_assignment\\productus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|D:\\Year3\\C#\\pizaa_assigment_c-\\pizza_c#_assignment\\containerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE6E1FCB-F334-4D60-B1AB-C983889D67A0}|PIZZA_c#_assignment\\PIZZA_c#_assignment.csproj|solutionrelative:pizza_c#_assignment\\containerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 86,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\Form1.cs",
+              "RelativeDocumentMoniker": "PIZZA_c#_assignment\\Form1.cs",
+              "ToolTip": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\Form1.cs",
+              "RelativeToolTip": "PIZZA_c#_assignment\\Form1.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwDEAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T08:40:35.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\Form1.cs",
+              "RelativeDocumentMoniker": "PIZZA_c#_assignment\\Form1.cs",
+              "ToolTip": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\Form1.cs [Design]",
+              "RelativeToolTip": "PIZZA_c#_assignment\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T08:35:57.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "PIZZA_c#_assignment\\DatabaseConnection.cs",
+              "ToolTip": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\DatabaseConnection.cs",
+              "RelativeToolTip": "PIZZA_c#_assignment\\DatabaseConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T08:33:53.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductUS.cs",
+              "DocumentMoniker": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\ProductUS.cs",
+              "RelativeDocumentMoniker": "PIZZA_c#_assignment\\ProductUS.cs",
+              "ToolTip": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\ProductUS.cs",
+              "RelativeToolTip": "PIZZA_c#_assignment\\ProductUS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T07:16:43.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductUS.cs [Design]",
+              "DocumentMoniker": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\ProductUS.cs",
+              "RelativeDocumentMoniker": "PIZZA_c#_assignment\\ProductUS.cs",
+              "ToolTip": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\ProductUS.cs [Design]",
+              "RelativeToolTip": "PIZZA_c#_assignment\\ProductUS.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T07:16:39.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContainerForm.cs",
+              "DocumentMoniker": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\ContainerForm.cs",
+              "RelativeDocumentMoniker": "PIZZA_c#_assignment\\ContainerForm.cs",
+              "ToolTip": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\ContainerForm.cs",
+              "RelativeToolTip": "PIZZA_c#_assignment\\ContainerForm.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T07:14:53.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\Product.cs",
+              "RelativeDocumentMoniker": "PIZZA_c#_assignment\\Product.cs",
+              "ToolTip": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\Product.cs",
+              "RelativeToolTip": "PIZZA_c#_assignment\\Product.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAqwFoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T07:10:10.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContainerForm.cs [Design]",
+              "DocumentMoniker": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\ContainerForm.cs",
+              "RelativeDocumentMoniker": "PIZZA_c#_assignment\\ContainerForm.cs",
+              "ToolTip": "D:\\Year3\\C#\\pizaa_assigment_c-\\PIZZA_c#_assignment\\ContainerForm.cs [Design]",
+              "RelativeToolTip": "PIZZA_c#_assignment\\ContainerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T07:29:10.957Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

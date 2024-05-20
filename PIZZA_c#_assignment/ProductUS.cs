@@ -13,11 +13,29 @@ namespace PIZZA_c__assignment
 {
     public partial class ProductUS : UserControl
     {
-        public ProductUS()
+        public int count=0;
+        Product product;
+        public ProductUS(Product product)
         {
+
             InitializeComponent();
-            txtProCombobox.SelectedIndex = 0;
+            this.product = product;
+            txtProName.Text=product.proName;
+            txtProPrice.Text = product.price[0];
+            for (int i = 0;i<product.size.Count;i++) 
+            {
+                uiComboBox.Items.Add(product.size[i]);
+            }
+            picBox.Image=product.img;
+            uiComboBox.SelectedIndex = 0;
         }
 
+        private void uiComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index=uiComboBox.SelectedIndex;
+            if (count > 0)
+                txtProPrice.Text = product.price[index];
+            count++;
+        }
     }
 }

@@ -36,21 +36,19 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnChicken = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDrink = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPizza = new Guna.UI2.WinForms.Guna2Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCash = new PIZZA_c__assignment.RJButton.RJButton();
             this.btnClearAll = new PIZZA_c__assignment.RJButton.RJButton();
-            this.productUS1 = new PIZZA_c__assignment.ProductUS();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,7 +64,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1553, 104);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 1;
             // 
             // label2
             // 
@@ -114,9 +112,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.guna2Button4);
-            this.panel2.Controls.Add(this.guna2Button3);
-            this.panel2.Controls.Add(this.guna2Button2);
-            this.panel2.Controls.Add(this.guna2Button1);
+            this.panel2.Controls.Add(this.btnChicken);
+            this.panel2.Controls.Add(this.btnDrink);
+            this.panel2.Controls.Add(this.btnPizza);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 104);
             this.panel2.Name = "panel2";
@@ -142,64 +140,65 @@
             this.guna2Button4.TabIndex = 3;
             this.guna2Button4.Text = "Log out";
             // 
-            // guna2Button3
+            // btnChicken
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button3.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2Button3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.White;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.Location = new System.Drawing.Point(220, 0);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(218, 39);
-            this.guna2Button3.TabIndex = 2;
-            this.guna2Button3.Text = "Checken";
+            this.btnChicken.BackColor = System.Drawing.Color.Transparent;
+            this.btnChicken.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnChicken.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnChicken.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 4);
+            this.btnChicken.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnChicken.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnChicken.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnChicken.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnChicken.FillColor = System.Drawing.Color.White;
+            this.btnChicken.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChicken.ForeColor = System.Drawing.Color.Black;
+            this.btnChicken.Location = new System.Drawing.Point(220, 0);
+            this.btnChicken.Name = "btnChicken";
+            this.btnChicken.Size = new System.Drawing.Size(218, 39);
+            this.btnChicken.TabIndex = 3;
+            this.btnChicken.Text = "Chicken";
+            this.btnChicken.Click += new System.EventHandler(this.btnChicken_Click);
             // 
-            // guna2Button2
+            // btnDrink
             // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button2.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.guna2Button2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.HoverState.CustomBorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button2.Location = new System.Drawing.Point(440, 0);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(218, 39);
-            this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Drink";
+            this.btnDrink.BackColor = System.Drawing.Color.Transparent;
+            this.btnDrink.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnDrink.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnDrink.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 4);
+            this.btnDrink.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDrink.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDrink.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDrink.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDrink.FillColor = System.Drawing.Color.White;
+            this.btnDrink.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDrink.ForeColor = System.Drawing.Color.Black;
+            this.btnDrink.HoverState.CustomBorderColor = System.Drawing.Color.DarkGreen;
+            this.btnDrink.Location = new System.Drawing.Point(440, 0);
+            this.btnDrink.Name = "btnDrink";
+            this.btnDrink.Size = new System.Drawing.Size(218, 39);
+            this.btnDrink.TabIndex = 0;
+            this.btnDrink.Text = "Drink";
             // 
-            // guna2Button1
+            // btnPizza
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.Checked = true;
-            this.guna2Button1.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.CustomBorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(218, 39);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "Pizza";
+            this.btnPizza.BackColor = System.Drawing.Color.Transparent;
+            this.btnPizza.Checked = true;
+            this.btnPizza.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnPizza.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPizza.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPizza.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPizza.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPizza.FillColor = System.Drawing.Color.White;
+            this.btnPizza.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPizza.ForeColor = System.Drawing.Color.Black;
+            this.btnPizza.HoverState.CustomBorderColor = System.Drawing.Color.DarkGreen;
+            this.btnPizza.Location = new System.Drawing.Point(0, 0);
+            this.btnPizza.Name = "btnPizza";
+            this.btnPizza.Size = new System.Drawing.Size(218, 39);
+            this.btnPizza.TabIndex = 3;
+            this.btnPizza.Text = "Pizza";
+            this.btnPizza.Click += new System.EventHandler(this.btnPizza_Click);
             // 
             // panel4
             // 
@@ -230,7 +229,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 404F));
-            this.tableLayoutPanel1.Controls.Add(this.productUS1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 140);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -275,18 +273,6 @@
             this.btnClearAll.TextColor = System.Drawing.Color.White;
             this.btnClearAll.UseVisualStyleBackColor = false;
             // 
-            // productUS1
-            // 
-            this.productUS1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productUS1.Location = new System.Drawing.Point(7, 7);
-            this.productUS1.Margin = new System.Windows.Forms.Padding(7);
-            this.productUS1.Name = "productUS1";
-            this.productUS1.Picture = ((System.Drawing.Image)(resources.GetObject("productUS1.Picture")));
-            this.productUS1.Product_Name = "";
-            this.productUS1.Product_price = "";
-            this.productUS1.Size = new System.Drawing.Size(371, 427);
-            this.productUS1.TabIndex = 0;
-            // 
             // ContainerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -300,6 +286,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ContainerForm";
             this.Text = "ContainerForm";
+            this.Load += new System.EventHandler(this.ContainerForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -307,7 +294,6 @@
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -320,15 +306,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnPizza;
+        private Guna.UI2.WinForms.Guna2Button btnChicken;
+        private Guna.UI2.WinForms.Guna2Button btnDrink;
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private RJButton.RJButton btnCash;
         private RJButton.RJButton btnClearAll;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private ProductUS productUS1;
     }
 }

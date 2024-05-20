@@ -38,7 +38,7 @@ namespace PIZZA_c__assignment
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtProName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtProCombobox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.uiComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnAddcash = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.txtProPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -103,26 +103,23 @@ namespace PIZZA_c__assignment
             this.txtProName.Size = new System.Drawing.Size(202, 40);
             this.txtProName.TabIndex = 4;
             // 
-            // txtProCombobox
+            // uiComboBox
             // 
-            this.txtProCombobox.AutoRoundedCorners = true;
-            this.txtProCombobox.BackColor = System.Drawing.Color.Transparent;
-            this.txtProCombobox.BorderRadius = 17;
-            this.txtProCombobox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtProCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtProCombobox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProCombobox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProCombobox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProCombobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtProCombobox.ItemHeight = 30;
-            this.txtProCombobox.Items.AddRange(new object[] {
-            "S",
-            "M",
-            "L"});
-            this.txtProCombobox.Location = new System.Drawing.Point(139, 252);
-            this.txtProCombobox.Name = "txtProCombobox";
-            this.txtProCombobox.Size = new System.Drawing.Size(202, 36);
-            this.txtProCombobox.TabIndex = 7;
+            this.uiComboBox.AutoRoundedCorners = true;
+            this.uiComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.uiComboBox.BorderRadius = 17;
+            this.uiComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.uiComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uiComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.uiComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.uiComboBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uiComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.uiComboBox.ItemHeight = 30;
+            this.uiComboBox.Location = new System.Drawing.Point(139, 252);
+            this.uiComboBox.Name = "uiComboBox";
+            this.uiComboBox.Size = new System.Drawing.Size(202, 36);
+            this.uiComboBox.TabIndex = 7;
+            this.uiComboBox.SelectedIndexChanged += new System.EventHandler(this.uiComboBox_SelectedIndexChanged);
             // 
             // btnAddcash
             // 
@@ -147,7 +144,7 @@ namespace PIZZA_c__assignment
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.btnAddcash);
             this.guna2ShadowPanel1.Controls.Add(this.picBox);
-            this.guna2ShadowPanel1.Controls.Add(this.txtProCombobox);
+            this.guna2ShadowPanel1.Controls.Add(this.uiComboBox);
             this.guna2ShadowPanel1.Controls.Add(this.txtProPrice);
             this.guna2ShadowPanel1.Controls.Add(this.txtProName);
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel3);
@@ -216,7 +213,7 @@ namespace PIZZA_c__assignment
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txtProName;
-        private Guna.UI2.WinForms.Guna2ComboBox txtProCombobox;
+        private Guna.UI2.WinForms.Guna2ComboBox uiComboBox;
         private Guna.UI2.WinForms.Guna2Button btnAddcash;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2TextBox txtProPrice;
@@ -235,10 +232,6 @@ namespace PIZZA_c__assignment
             get { return txtProPrice.Text;} 
             set { txtProPrice.Text = value;}
         }
-        public ComboBox combo
-        {
-            get { return txtProCombobox; }
-        }
-
+        public ComboBox UiComboBox { get { return uiComboBox; } }
     }
 }

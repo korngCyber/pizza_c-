@@ -26,3 +26,4 @@ D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment
 D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c#.36DEC1B9.Up2Date
 D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.exe
 D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c#_assignment.pdb
+D:\Year3\C#\pizaa_assigment_c-\PIZZA_c#_assignment\obj\Debug\PIZZA_c__assignment.Form2.resources
