@@ -49,9 +49,9 @@ namespace PIZZA_c__assignment
                     string price= reader[3].ToString();
                     byte[] data = (byte[])reader[4];
                     Image imge;
-                    using (MemoryStream ms = new MemoryStream(data)) 
+                    using (MemoryStream ms = new MemoryStream(data))
                     {
-                       imge =Image.FromStream(ms);
+                        imge = Image.FromStream(ms);
                     }
                     string catid = reader[5].ToString();
                     
@@ -78,11 +78,9 @@ namespace PIZZA_c__assignment
         }
         public static bool Login(String txtUsername, String txtPassword)
         {
-
             try
             {
                 //SELECT StaName,StaPwd from tbStaffs WHERE StaName ='Seth' AND PWDCOMPARE(N'Password',StaPwd)=1
-                string idCompare = "0";
                 string sql = $"SELECT StaName from tbStaffs WHERE StaName ='{txtUsername}' AND PWDCOMPARE(N'{txtPassword}',StaPwd)=1";
                 SqlCommand cmd = new SqlCommand(sql, DatabaseConnection.dataCon);
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -101,5 +99,6 @@ namespace PIZZA_c__assignment
             return false;
         }
     }
-    
+
 }
+    

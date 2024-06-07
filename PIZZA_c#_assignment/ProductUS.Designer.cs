@@ -41,6 +41,7 @@ namespace PIZZA_c__assignment
             this.uiComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnAddcash = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.txtProPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
@@ -93,12 +94,14 @@ namespace PIZZA_c__assignment
             this.txtProName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtProName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProName.ForeColor = System.Drawing.Color.Black;
             this.txtProName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProName.Location = new System.Drawing.Point(139, 196);
             this.txtProName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtProName.Name = "txtProName";
             this.txtProName.PasswordChar = '\0';
             this.txtProName.PlaceholderText = "";
+            this.txtProName.ReadOnly = true;
             this.txtProName.SelectedText = "";
             this.txtProName.Size = new System.Drawing.Size(202, 40);
             this.txtProName.TabIndex = 4;
@@ -113,7 +116,7 @@ namespace PIZZA_c__assignment
             this.uiComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.uiComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.uiComboBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.uiComboBox.ForeColor = System.Drawing.Color.Black;
             this.uiComboBox.ItemHeight = 30;
             this.uiComboBox.Location = new System.Drawing.Point(139, 252);
             this.uiComboBox.Name = "uiComboBox";
@@ -131,17 +134,20 @@ namespace PIZZA_c__assignment
             this.btnAddcash.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddcash.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddcash.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddcash.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddcash.FillColor = System.Drawing.Color.Green;
+            this.btnAddcash.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnAddcash.ForeColor = System.Drawing.Color.White;
-            this.btnAddcash.Location = new System.Drawing.Point(26, 357);
+            this.btnAddcash.Location = new System.Drawing.Point(190, 365);
             this.btnAddcash.Name = "btnAddcash";
-            this.btnAddcash.Size = new System.Drawing.Size(315, 42);
+            this.btnAddcash.Size = new System.Drawing.Size(158, 42);
             this.btnAddcash.TabIndex = 11;
             this.btnAddcash.Text = "Add Cash ";
+            this.btnAddcash.Click += new System.EventHandler(this.btnAddcash_Click);
             // 
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.btnCancel);
             this.guna2ShadowPanel1.Controls.Add(this.btnAddcash);
             this.guna2ShadowPanel1.Controls.Add(this.picBox);
             this.guna2ShadowPanel1.Controls.Add(this.uiComboBox);
@@ -158,6 +164,26 @@ namespace PIZZA_c__assignment
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(380, 436);
             this.guna2ShadowPanel1.TabIndex = 12;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Animated = true;
+            this.btnCancel.AutoRoundedCorners = true;
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BorderRadius = 20;
+            this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCancel.FillColor = System.Drawing.Color.Green;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(26, 365);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(158, 42);
+            this.btnCancel.TabIndex = 11;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // txtProPrice
             // 
             this.txtProPrice.AutoRoundedCorners = true;
@@ -170,12 +196,14 @@ namespace PIZZA_c__assignment
             this.txtProPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtProPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProPrice.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProPrice.ForeColor = System.Drawing.Color.Black;
             this.txtProPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProPrice.Location = new System.Drawing.Point(139, 304);
             this.txtProPrice.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtProPrice.Name = "txtProPrice";
             this.txtProPrice.PasswordChar = '\0';
             this.txtProPrice.PlaceholderText = "";
+            this.txtProPrice.ReadOnly = true;
             this.txtProPrice.SelectedText = "";
             this.txtProPrice.Size = new System.Drawing.Size(202, 37);
             this.txtProPrice.TabIndex = 6;
@@ -218,6 +246,8 @@ namespace PIZZA_c__assignment
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2TextBox txtProPrice;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2Button btnCancel;
+
         public Image Picture {
             get { return picBox.Image; }
             set { picBox.Image = value; }   

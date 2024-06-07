@@ -15,7 +15,8 @@ namespace PIZZA_c__assignment
         public static string user { get; set; }
         public static void sqlAuthentication(string username, string password)
         {
-            string connectStr = $"Server=.;Database=Pizza;User Id={username};Password={password};";
+            //string connectStr = $"Server=.;Database=Pizza;User Id={username};Password={password};";
+            string connectStr = $"Server=DESKTOP-LD6E9JP\\DBSERVER;Database=Pizza;User Id={username};Password={password};";
             dataCon = new SqlConnection(connectStr);
             dataCon.Open();
             user = username;

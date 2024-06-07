@@ -15,27 +15,26 @@ namespace PIZZA_c__assignment
 {
     public partial class ContainerForm : Form
     {
-        public ContainerForm()
+        private main4Form THIS;
+        public ContainerForm(main4Form THIS)
         {
             InitializeComponent();
+            this.THIS = THIS;
         }
         private void ContainerForm_Load(object sender, EventArgs e)
         {
             Product.InitializeProduct();
             btnPizza.PerformClick();
         }
-
+        private Order ord;
         private void btnPizza_Click(object sender, EventArgs e)
         {
-            //tableLayoutPanel1.RowStyles.Clear();
-            //tableLayoutPanel1.ColumnStyles.Clear();
-
             while (tableLayoutPanel1.Controls.Count > 0)
             {
                 tableLayoutPanel1.Controls[0].Dispose();
             }
 
-            int column = 0, row = 0, id = 1;
+            int column = 1, row = 0;
             for (int i = 0; i < Product.products.Count; i++)
             {
                 if (Product.products[i].catID.Equals("1"))
@@ -43,13 +42,14 @@ namespace PIZZA_c__assignment
                     ProductUS p = new ProductUS(Product.products[i]);
                     tableLayoutPanel1.Controls.Add(p, column, row);
                     column++;
-                    if (column > 2)
+                    if (column > 3)
                     {
                         row++;
-                        column = 0;
+                        column = 1;
                     }
                 }
             }
+           
         }
 
         private void btnChicken_Click(object sender, EventArgs e)
@@ -59,7 +59,7 @@ namespace PIZZA_c__assignment
                 tableLayoutPanel1.Controls[0].Dispose();
             }
 
-            int column = 0, row = 0, id = 1;
+            int column = 1, row = 0;
             for (int i = 0; i < Product.products.Count; i++)
             {
                 if (Product.products[i].catID.Equals("3"))
@@ -67,13 +67,61 @@ namespace PIZZA_c__assignment
                     ProductUS p = new ProductUS(Product.products[i]);
                     tableLayoutPanel1.Controls.Add(p, column, row);
                     column++;
-                    if (column > 2)
+                    if (column > 3)
                     {
                         row++;
-                        column = 0;
+                        column = 1;
                     }
                 }
             }
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            THIS.Show();
+             
+        }
+
+        private void btnDrink_Click(object sender, EventArgs e)
+        {
+            while (tableLayoutPanel1.Controls.Count > 0)
+            {
+                tableLayoutPanel1.Controls[0].Dispose();
+            }
+
+            int column = 1, row = 0;
+            for (int i = 0; i < Product.products.Count; i++)
+            {
+                if (Product.products[i].catID.Equals("2"))
+                {
+                    ProductUS p = new ProductUS(Product.products[i]);
+                    tableLayoutPanel1.Controls.Add(p, column, row);
+                    column++;
+                    if (column > 3)
+                    {
+                        row++;
+                        column = 1;
+                    }
+                }
+            }
+        }
+
+        private void btnPayment_Click(object sender, EventArgs e)
+        {
+            PaymentForm pf = new PaymentForm(this);
+            if(pf.ShowDialog()==DialogResult.OK) 
+            {
+                while (tableLayoutPanel1.Controls.Count > 0)
+                {
+                    tableLayoutPanel1.Controls[0].Dispose();
+                }
+                
+                btnPizza.PerformClick();
+            }
+
+            //this.Hide();
+            //new PaymentForm(this).Show();   
         }
     }
 }
